@@ -15,16 +15,32 @@ class MyWidget extends StatelessWidget {
 			home: Scaffold(
 				backgroundColor: Colors.green,
 				body: SafeArea(
-					child: Container(
-						padding: EdgeInsets.all(20.0),
-						margin: EdgeInsets.fromLTRB(30.0, 10.0, 50.0, 20.0),
-						height: 100.0,
-						width: 100.0,
-						color: Colors.white,
-						child: Text(" Ola mundo "),
-					),
+					child: Column(
+						crossAxisAlignment: CrossAxisAlignment.end,
+						children: <Widget>[
+							Container(
+							height: 100.0,
+							width: double.infinity,
+							color: Colors.white,
+							child: Text(" Container 1 "),
+							),
+							Container(
+								width: double.infinity,
+								height: 100.0,
+								color: Colors.red,
+								child: Text(" Container 2 "),
+							),
+							 Container(
+								height:100.0,
+								width: double.infinity,
+								color: Colors.blue,
+								child: Text(" Container 3 "),
+							),
+						],
+					)
 				),
 			),
 		);
   }
 }
+
