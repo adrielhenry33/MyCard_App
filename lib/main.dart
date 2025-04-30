@@ -16,23 +16,20 @@ class MyWidget extends StatelessWidget {
 				backgroundColor: Colors.green,
 				body: SafeArea(
 					child: Column(
-						crossAxisAlignment: CrossAxisAlignment.end,
+						crossAxisAlignment: CrossAxisAlignment.stretch,
 						children: <Widget>[
 							Container(
 							height: 100.0,
-							width: double.infinity,
 							color: Colors.white,
 							child: Text(" Container 1 "),
 							),
 							Container(
-								width: double.infinity,
 								height: 100.0,
 								color: Colors.red,
 								child: Text(" Container 2 "),
 							),
 							 Container(
 								height:100.0,
-								width: double.infinity,
 								color: Colors.blue,
 								child: Text(" Container 3 "),
 							),
